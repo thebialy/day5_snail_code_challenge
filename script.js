@@ -10,3 +10,9 @@
         // reverse the bottom row
         // get beginning items of the array to create left side
 
+const snail = (arr) => {
+  const snailArray = [];
+  while(arr.length){
+      snailArray.push(...arr.shift())
+  }
+}
