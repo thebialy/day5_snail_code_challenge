@@ -18,7 +18,7 @@ const snail = (arr) =>{
         snailArray.push(arr[i].pop())
         }
         snailArray.push(...(arr.pop() || []).reverse())
-        for (var i = arr.length -1; i >= 0; i--){
+        for (let i = arr.length -1; i >= 0; i--){
         snailArray.push(arr[i].shift())
         }
     }
