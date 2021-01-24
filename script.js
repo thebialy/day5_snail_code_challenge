@@ -14,10 +14,12 @@ const snail = (arr) =>{
     let snailArray = []
     while(arr.length){
         snailArray.push(...arr.shift())
+
         for (let i = 0; i < arr.length; i++){
         snailArray.push(arr[i].pop())
         }
         snailArray.push(...(arr.pop() || []).reverse())
+        
         for (let i = arr.length -1; i >= 0; i--){
         snailArray.push(arr[i].shift())
         }
